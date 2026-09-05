@@ -5,8 +5,10 @@ import io.github.umoshii.woasts.config.sections.FPSConfigSection
 import io.github.umoshii.woasts.helpers.McClient
 import io.github.umoshii.woasts.utils.FontUtils
 import io.github.umoshii.woasts.widgets.Widget
+import io.github.umoshii.woasts.widgets.Woast
 import net.minecraft.network.chat.MutableComponent
 
+@Woast
 object FPSWidget : Widget<FPSConfigSection>() {
     override val config: FPSConfigSection
         get() = WoastsClient.config.fpsConfig

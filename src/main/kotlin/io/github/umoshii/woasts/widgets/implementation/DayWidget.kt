@@ -7,8 +7,10 @@ import io.github.umoshii.woasts.utils.ColorUtils
 import io.github.umoshii.woasts.utils.FontUtils
 import io.github.umoshii.woasts.utils.StringUtils.toFormattedString
 import io.github.umoshii.woasts.widgets.Widget
+import io.github.umoshii.woasts.widgets.Woast
 import net.minecraft.network.chat.MutableComponent
 
+@Woast
 object DayWidget : Widget<DayConfigSection>() {
 
     override val config: DayConfigSection

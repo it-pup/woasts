@@ -3,6 +3,8 @@ package io.github.umoshii.woasts.widgets
 import io.github.umoshii.woasts.Woasts
 import io.github.umoshii.woasts.WoastsClient
 import io.github.umoshii.woasts.config.Config
+import io.github.umoshii.woasts.generated.WoastsModules
+import io.github.umoshii.woasts.generated.WoastsWoasts
 import io.github.umoshii.woasts.helpers.McClient
 import io.github.umoshii.woasts.widgets.implementation.BiomeWidget
 import io.github.umoshii.woasts.widgets.implementation.DayWidget
@@ -18,7 +20,7 @@ import net.minecraft.client.DeltaTracker
 import net.minecraft.client.gui.GuiGraphicsExtractor
 
 object WidgetRenderer {
-    private val widgets: List<Widget<*>> = listOf(PingWidget, FPSWidget, PositionWidget, BiomeWidget, IrlTimeWidget, IngameTimeWidget, WeatherWidget, DayWidget)
+    private val widgets: List<Widget<*>> = WoastsWoasts.collected
 
     // this is a static value, so it's justifiable to put it here like this
     private const val CONTAINER_HEIGHT: Int = 14

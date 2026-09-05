@@ -6,8 +6,10 @@ import io.github.umoshii.woasts.helpers.McClient
 import io.github.umoshii.woasts.utils.ColorUtils
 import io.github.umoshii.woasts.utils.FontUtils
 import io.github.umoshii.woasts.widgets.Widget
+import io.github.umoshii.woasts.widgets.Woast
 import net.minecraft.network.chat.MutableComponent
 
+@Woast
 object IngameTimeWidget : Widget<IngameTimeConfigSection>() {
     private val dayColor = ColorUtils.hexToArgb("#F1C40FFF")
     private val nightColor = ColorUtils.hexToArgb("#3498DBFF")

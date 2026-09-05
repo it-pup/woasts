@@ -7,10 +7,12 @@ import io.github.umoshii.woasts.helpers.McClient
 import io.github.umoshii.woasts.utils.ColorUtils
 import io.github.umoshii.woasts.utils.FontUtils
 import io.github.umoshii.woasts.widgets.Widget
+import io.github.umoshii.woasts.widgets.Woast
 import net.minecraft.network.chat.MutableComponent
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
+@Woast
 object IrlTimeWidget : Widget<IrlTimeConfigSection>() {
     private val format12h = DateTimeFormatter.ofPattern("hh:mma")
     private val format24h = DateTimeFormatter.ofPattern("HH:mm")

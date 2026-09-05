@@ -5,6 +5,7 @@ import io.github.umoshii.woasts.config.sections.WidgetConfigSection
 import io.github.umoshii.woasts.helpers.McClient
 import io.github.umoshii.woasts.utils.ColorUtils
 import io.github.umoshii.woasts.utils.FontUtils
+import me.owdding.ktmodules.AutoCollect
 import net.minecraft.client.DeltaTracker
 import net.minecraft.client.gui.GuiGraphicsExtractor
 import net.minecraft.network.chat.Component
@@ -43,3 +44,9 @@ abstract class Widget<T : WidgetConfigSection> {
         graphics.text(McClient.font, renderComponent, tx, ty, renderColor, true)
     }
 }
+
+
+@AutoCollect("Woasts")
+@Retention(AnnotationRetention.RUNTIME)
+@Target(AnnotationTarget.CLASS)
+annotation class Woast

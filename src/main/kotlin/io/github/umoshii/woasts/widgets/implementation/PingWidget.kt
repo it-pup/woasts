@@ -6,8 +6,10 @@ import io.github.umoshii.woasts.features.PingListener
 import io.github.umoshii.woasts.helpers.McClient
 import io.github.umoshii.woasts.utils.FontUtils
 import io.github.umoshii.woasts.widgets.Widget
+import io.github.umoshii.woasts.widgets.Woast
 import net.minecraft.network.chat.MutableComponent
 
+@Woast
 object PingWidget : Widget<PingConfigSection>() {
     private const val SECOND: Int = 1000
     private var lastPingTime: Long = 0L
