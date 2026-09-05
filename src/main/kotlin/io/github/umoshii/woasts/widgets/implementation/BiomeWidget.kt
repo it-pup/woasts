@@ -7,11 +7,13 @@ import io.github.umoshii.woasts.utils.ColorUtils
 import io.github.umoshii.woasts.utils.FontUtils
 import io.github.umoshii.woasts.utils.StringUtils.toTitleCase
 import io.github.umoshii.woasts.widgets.Widget
+import io.github.umoshii.woasts.widgets.Woast
 import net.minecraft.core.Holder
 import net.minecraft.network.chat.MutableComponent
 import net.minecraft.world.level.biome.Biome
 import kotlin.jvm.optionals.getOrNull
 
+@Woast
 object BiomeWidget : Widget<BiomeConfigSection>() {
     override val config: BiomeConfigSection
         get() = WoastsClient.config.biomeConfig

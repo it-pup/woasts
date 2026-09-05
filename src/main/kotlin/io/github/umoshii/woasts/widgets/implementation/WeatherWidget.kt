@@ -7,9 +7,11 @@ import io.github.umoshii.woasts.utils.ColorUtils
 import io.github.umoshii.woasts.utils.FontUtils
 import io.github.umoshii.woasts.utils.StringUtils.toTitleCase
 import io.github.umoshii.woasts.widgets.Widget
+import io.github.umoshii.woasts.widgets.Woast
 import net.minecraft.network.chat.MutableComponent
 import net.minecraft.world.level.Level
 
+@Woast
 object WeatherWidget : Widget<WeatherConfigSection>() {
     override val config: WeatherConfigSection
         get() = WoastsClient.config.weatherConfig
