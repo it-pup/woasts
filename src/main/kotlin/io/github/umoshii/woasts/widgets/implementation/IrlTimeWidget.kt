@@ -1,9 +1,7 @@
 package io.github.umoshii.woasts.widgets.implementation
 
 import io.github.umoshii.woasts.WoastsClient
-import io.github.umoshii.woasts.config.sections.FPSConfigSection
 import io.github.umoshii.woasts.config.sections.IrlTimeConfigSection
-import io.github.umoshii.woasts.helpers.McClient
 import io.github.umoshii.woasts.utils.ColorUtils
 import io.github.umoshii.woasts.utils.FontUtils
 import io.github.umoshii.woasts.widgets.Widget

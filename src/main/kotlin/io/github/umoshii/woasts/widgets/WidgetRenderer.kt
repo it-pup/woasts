@@ -3,17 +3,8 @@ package io.github.umoshii.woasts.widgets
 import io.github.umoshii.woasts.Woasts
 import io.github.umoshii.woasts.WoastsClient
 import io.github.umoshii.woasts.config.Config
-import io.github.umoshii.woasts.generated.WoastsModules
 import io.github.umoshii.woasts.generated.WoastsWoasts
 import io.github.umoshii.woasts.helpers.McClient
-import io.github.umoshii.woasts.widgets.implementation.BiomeWidget
-import io.github.umoshii.woasts.widgets.implementation.DayWidget
-import io.github.umoshii.woasts.widgets.implementation.FPSWidget
-import io.github.umoshii.woasts.widgets.implementation.IngameTimeWidget
-import io.github.umoshii.woasts.widgets.implementation.IrlTimeWidget
-import io.github.umoshii.woasts.widgets.implementation.PingWidget
-import io.github.umoshii.woasts.widgets.implementation.PositionWidget
-import io.github.umoshii.woasts.widgets.implementation.WeatherWidget
 import net.fabricmc.fabric.api.client.rendering.v1.hud.HudElementRegistry
 import net.fabricmc.fabric.api.client.rendering.v1.hud.VanillaHudElements
 import net.minecraft.client.DeltaTracker
