@@ -33,6 +33,6 @@ object DayWidget : Widget<DayConfigSection>() {
 
     override fun getRenderValue(): String {
         val day = time / 24000L
-        return "${day.toFormattedString()} Day"
+        return "Day ${day.toFormattedString()}"
     }
 }
