@@ -53,7 +53,7 @@ dependencies {
 
 ksp {
     arg("meowdding.modules.project_name", base.archivesName)
-    arg("meowdding.modules.package", "io.github.umoshii.woasts.generated")
+    arg("meowdding.modules.package", "pet.itpuppy.woasts.generated")
 }
 
 tasks.register<FlattenLangTask>("flattenLang") {

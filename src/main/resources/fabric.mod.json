@@ -6,12 +6,12 @@
 	"description": "${mod_desc}",
 
 	"authors": [
-		"umoshii"
+		"itpuppy"
 	],
 
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://itpuppy.pet/",
+		"sources": "https://github.com/it-pup/woasts"
 	},
 
 	"license": "Apache-2.0",
@@ -21,21 +21,21 @@
 	"entrypoints": {
 		"main": [
 			{
-				"value": "io.github.umoshii.woasts.Woasts",
+				"value": "pet.itpuppy.woasts.Woasts",
 				"adapter": "kotlin"
 			}
 		],
 
 		"client": [
 			{
-				"value": "io.github.umoshii.woasts.WoastsClient",
+				"value": "pet.itpuppy.woasts.WoastsClient",
 				"adapter": "kotlin"
 			}
 		],
 
 		"modmenu": [
 			{
-				"value": "io.github.umoshii.woasts.integration.ModMenuIntegration",
+				"value": "pet.itpuppy.woasts.integration.ModMenuIntegration",
 				"adapter": "kotlin"
 			}
 		]
