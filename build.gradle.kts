@@ -93,11 +93,14 @@ tasks.processResources {
 }
 
 val mcVersion = sc.current.version.replace(".", "")
+
+// grr annoying warnings
+@Suppress("DEPRECATION")
 loom {
     runConfigs["client"].apply {
         ideConfigGenerated(true)
         runDir = "../../run"
-        vmArg("-Dfabric.modsFolder=\"${mcVersion}Mods\"")
+        vmArg("-Dfabric.modsFolder=${mcVersion}Mods")
     }
     accessWidenerPath = rootProject.file("src/main/resources/woasts.classtweaker")
 }

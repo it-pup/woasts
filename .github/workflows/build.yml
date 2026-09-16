@@ -43,6 +43,12 @@ jobs:
           archive: false
           path: build/libs/*+26.2*.jar
 
+      -   name: capture build artifacts for 26.3.x
+          uses: actions/upload-artifact@v7
+          with:
+              archive: false
+              path: build/libs/*+26.3*.jar
+
       - name: release
         uses: softprops/action-gh-release@v3.0.2
         if: github.ref_type == 'tag'
@@ -52,3 +58,4 @@ jobs:
           files: |
             build/libs/*+26.1*.jar
             build/libs/*+26.2*.jar
+            build/libs/*+26.3*.jar
