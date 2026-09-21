@@ -46,7 +46,7 @@ abstract class Widget<T : WidgetConfigSection> {
 }
 
 
-@AutoCollect("Woasts")
+@AutoCollect("WoastWidgets", prefixProjectName = false)
 @Retention(AnnotationRetention.RUNTIME)
 @Target(AnnotationTarget.CLASS)
 annotation class Woast

@@ -8,7 +8,7 @@ mod.desc    = "Adds small HUD widgets with (sometimes not so) useful info in the
 deps.fabric_loader          = "0.19.3"
 deps.fabric_language_kotlin = "1.13.13+kotlin.2.4.10"
 deps.devauth                = "1.2.2"
-deps.ktmodules              = "1.0.8"
+deps.ktmodules              = "1.0.9"
 
 # =-=-=-=-=-=-=-=-=
 ["26.1.2"]

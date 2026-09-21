@@ -3,7 +3,7 @@ package pet.itpuppy.woasts.widgets
 import pet.itpuppy.woasts.Woasts
 import pet.itpuppy.woasts.WoastsClient
 import pet.itpuppy.woasts.config.Config
-import pet.itpuppy.woasts.generated.WoastsWoasts
+import pet.itpuppy.woasts.generated.WoastWidgets
 import pet.itpuppy.woasts.helpers.McClient
 import net.fabricmc.fabric.api.client.rendering.v1.hud.HudElementRegistry
 import net.fabricmc.fabric.api.client.rendering.v1.hud.VanillaHudElements
@@ -11,7 +11,7 @@ import net.minecraft.client.DeltaTracker
 import net.minecraft.client.gui.GuiGraphicsExtractor
 
 object WidgetRenderer {
-    private val widgets: List<Widget<*>> = WoastsWoasts.collected
+    private val widgets: List<Widget<*>> = WoastWidgets.collected
 
     // this is a static value, so it's justifiable to put it here like this
     private const val CONTAINER_HEIGHT: Int = 14
