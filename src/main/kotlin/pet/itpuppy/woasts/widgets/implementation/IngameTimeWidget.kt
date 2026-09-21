@@ -48,8 +48,8 @@ object IngameTimeWidget : Widget<IngameTimeConfigSection>() {
         val result = Component.literal("")
 
         fun append(prefix: String, ticks: Long, withLineBreak: Boolean = true) {
-            result.append(Component.literal("$prefix: ").withColor(TextColor.GRAY))
-            result.append(Component.literal(formatTicks(ticks)).withColor(TextColor.GREEN))
+            result.append(Component.literal("$prefix: ").withColor(11184810))
+            result.append(Component.literal(formatTicks(ticks)).withColor(5635925))
             if (withLineBreak) result.append("\n")
         }
 
