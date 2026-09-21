@@ -7,7 +7,6 @@ import net.minecraft.client.gui.screens.Screen
 import net.minecraft.client.multiplayer.ClientLevel
 import net.minecraft.client.multiplayer.ClientPacketListener
 import net.minecraft.client.player.LocalPlayer
-import org.joml.Vector2d
 import org.joml.Vector2i
 
 /*
