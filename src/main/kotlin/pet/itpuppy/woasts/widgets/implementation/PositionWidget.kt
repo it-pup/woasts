@@ -1,12 +1,12 @@
 package pet.itpuppy.woasts.widgets.implementation
 
+import net.minecraft.network.chat.MutableComponent
 import pet.itpuppy.woasts.WoastsClient
 import pet.itpuppy.woasts.config.sections.PositionConfigSection
 import pet.itpuppy.woasts.helpers.McClient
 import pet.itpuppy.woasts.utils.FontUtils
 import pet.itpuppy.woasts.widgets.Widget
 import pet.itpuppy.woasts.widgets.Woast
-import net.minecraft.network.chat.MutableComponent
 
 @Woast
 object PositionWidget : Widget<PositionConfigSection>() {
@@ -22,8 +22,8 @@ object PositionWidget : Widget<PositionConfigSection>() {
     }
 
     override fun getRenderValue(): String {
-        McClient.player?.let { player ->
-            return "${player.blockX} ${player.blockY} ${player.blockZ}"
+        McClient.instance.cameraEntity?.let {
+            return "${it.blockX} ${it.blockY} ${it.blockZ}"
         }
 
         return "? ? ?"
