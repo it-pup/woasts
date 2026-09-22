@@ -27,6 +27,8 @@ abstract class Widget<T : WidgetConfigSection> {
 
     open fun shouldRender(): Boolean = true
 
+    open fun getHover(): Component? = null
+
     fun render(graphics: GuiGraphicsExtractor, tickCounter: DeltaTracker, x: Int, y: Int) {
         val renderColor = getRenderColor()
         val renderComponent = Component.empty()
@@ -46,7 +48,7 @@ abstract class Widget<T : WidgetConfigSection> {
 }
 
 
-@AutoCollect("Woasts")
+@AutoCollect("WoastWidgets", prefixProjectName = false)
 @Retention(AnnotationRetention.RUNTIME)
 @Target(AnnotationTarget.CLASS)
 annotation class Woast

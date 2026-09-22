@@ -7,6 +7,7 @@ import net.minecraft.client.gui.screens.Screen
 import net.minecraft.client.multiplayer.ClientLevel
 import net.minecraft.client.multiplayer.ClientPacketListener
 import net.minecraft.client.player.LocalPlayer
+import org.joml.Vector2i
 
 /*
     Implementation based on @SkyblockAPI/SkyblockAPI
@@ -37,4 +38,7 @@ object McClient {
     val screen: Screen?
         //~ if < 26.2 'instance.gui.screen()' -> 'instance.screen'
         get() = instance.gui.screen()
+
+    val mouse: Vector2i
+        get() = Vector2i(instance.mouseHandler.getScaledXPos(window).toInt(), instance.mouseHandler.getScaledYPos(window).toInt())
 }
