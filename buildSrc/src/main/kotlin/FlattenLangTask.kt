@@ -65,7 +65,7 @@ abstract class FlattenLangTask : DefaultTask() {
         obj: JsonObject,
         key: String,
         marker: String,
-        result: JsonObject
+        result: JsonObject,
     ) {
         for ((k, e) in obj.entrySet()) {
             val newKey = if (key.isEmpty()) {
@@ -82,7 +82,7 @@ abstract class FlattenLangTask : DefaultTask() {
         key: String,
         entry: JsonElement,
         marker: String,
-        result: JsonObject
+        result: JsonObject,
     ) {
         if (entry.isJsonObject) {
             processObject(entry.asJsonObject, key, marker, result)
@@ -90,7 +90,7 @@ abstract class FlattenLangTask : DefaultTask() {
         }
 
         val prefix = key.removeSuffix(".$marker")
-        val value  = if (entry is JsonArray) JsonPrimitive(entry.joinToString("\n") { it.asString }) else entry
+        val value = if (entry is JsonArray) JsonPrimitive(entry.joinToString("\n") { it.asString }) else entry
 
         result.add(prefix, value)
     }
