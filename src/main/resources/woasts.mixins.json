@@ -1,17 +1,17 @@
 {
-	"required": true,
-	"package": "pet.itpuppy.woasts.mixin",
-	"compatibilityLevel": "JAVA_25",
+    "required": true,
+    "package": "pet.itpuppy.woasts.mixin",
+    "compatibilityLevel": "JAVA_25",
 
-	"mixins": [
+    "mixins": [
         "ClientPacketListenerMixin"
-	],
+    ],
 
-	"injectors": {
-		"defaultRequire": 1
-	},
+    "injectors": {
+        "defaultRequire": 1
+    },
 
-	"overwrites": {
-		"requireAnnotations": true
-	}
+    "overwrites": {
+        "requireAnnotations": true
+    }
 }

@@ -47,8 +47,8 @@ object PingWidget : Widget<PingConfigSection>() {
         return when (lastPingValue) {
             0L -> WoastsClient.config.pingConfig.grayPingColor
             in 1L..greenRange -> WoastsClient.config.pingConfig.greenPingColor
-            in greenRange+1L..yellowRange -> WoastsClient.config.pingConfig.yellowPingColor
-            in yellowRange+1L..orangeRange -> WoastsClient.config.pingConfig.orangePingColor
+            in greenRange + 1L..yellowRange -> WoastsClient.config.pingConfig.yellowPingColor
+            in yellowRange + 1L..orangeRange -> WoastsClient.config.pingConfig.orangePingColor
             else -> WoastsClient.config.pingConfig.redPingColor
         }
     }

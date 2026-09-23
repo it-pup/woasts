@@ -12,11 +12,11 @@ import org.spongepowered.asm.mixin.injection.At;
 @Mixin(ClientPacketListener.class)
 public class ClientPacketListenerMixin {
     @WrapOperation(
-            method = "tick",
-            at = @At(
-                    value = "INVOKE",
-                    target = "Lnet/minecraft/client/gui/components/DebugScreenOverlay;showNetworkCharts()Z"
-            )
+        method = "tick",
+        at = @At(
+            value = "INVOKE",
+            target = "Lnet/minecraft/client/gui/components/DebugScreenOverlay;showNetworkCharts()Z"
+        )
     )
     private boolean onShowNetworkCharts(DebugScreenOverlay instance, Operation<Boolean> original) {
         return true;

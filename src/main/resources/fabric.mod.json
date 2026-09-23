@@ -1,62 +1,62 @@
 {
-	"schemaVersion": 1,
-	"id": "${mod_id}",
-	"version": "${mod_version}",
-	"name": "${mod_name}",
-	"description": "${mod_desc}",
+    "schemaVersion": 1,
+    "id": "${mod_id}",
+    "version": "${mod_version}",
+    "name": "${mod_name}",
+    "description": "${mod_desc}",
 
-	"authors": [
-		"itpuppy"
-	],
+    "authors": [
+        "itpuppy"
+    ],
 
-	"contact": {
-		"homepage": "https://itpuppy.pet/",
-		"sources": "https://github.com/it-pup/woasts"
-	},
+    "contact": {
+        "homepage": "https://itpuppy.pet/",
+        "sources": "https://github.com/it-pup/woasts"
+    },
 
-	"license": "Apache-2.0",
-	"icon": "assets/woasts/icon.png",
-	"environment": "client",
+    "license": "Apache-2.0",
+    "icon": "assets/woasts/icon.png",
+    "environment": "client",
 
-	"entrypoints": {
-		"main": [
-			{
-				"value": "pet.itpuppy.woasts.Woasts",
-				"adapter": "kotlin"
-			}
-		],
+    "entrypoints": {
+        "main": [
+            {
+                "value": "pet.itpuppy.woasts.Woasts",
+                "adapter": "kotlin"
+            }
+        ],
 
-		"client": [
-			{
-				"value": "pet.itpuppy.woasts.WoastsClient",
-				"adapter": "kotlin"
-			}
-		],
+        "client": [
+            {
+                "value": "pet.itpuppy.woasts.WoastsClient",
+                "adapter": "kotlin"
+            }
+        ],
 
-		"modmenu": [
-			{
-				"value": "pet.itpuppy.woasts.integration.ModMenuIntegration",
-				"adapter": "kotlin"
-			}
-		]
-	},
+        "modmenu": [
+            {
+                "value": "pet.itpuppy.woasts.integration.ModMenuIntegration",
+                "adapter": "kotlin"
+            }
+        ]
+    },
 
-	"mixins": [
-        "woasts.mixins.json"
-	],
     "accessWidener": "woasts.classtweaker",
+    "mixins": [
+        "woasts.mixins.json"
+    ],
 
-	"depends": {
-		"minecraft": "${mod_mc_compat}",
-		"fabricloader": ">=0.19.3",
-		"java": ">=25",
+    "depends": {
+        "minecraft": "${mod_mc_compat}",
+        "fabricloader": ">=0.19.3",
+        "java": ">=25",
 
-		"fabric-api": "*",
-		"fabric-language-kotlin": "*",
-		"cloth-config": ">=${deps_cloth_config}"
-	},
+        "fabric-api": "*",
+        "fabric-language-kotlin": "*",
+        "cloth-config": ">=${deps_cloth_config}"
+    },
 
-	"suggests": {
-		"modmenu": "*"
-	}
+    "suggests": {
+        "modmenu": "*"
+    }
 }

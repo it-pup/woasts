@@ -14,7 +14,7 @@ object FPSWidget : Widget<FPSConfigSection>() {
         get() = WoastsClient.config.fpsConfig
 
     override fun getRenderColor(): Int {
-        return when(McClient.instance.fps) {
+        return when (McClient.instance.fps) {
             in 0..<WoastsClient.config.fpsConfig.optimalFps -> WoastsClient.config.fpsConfig.yellowFpsColor
             else -> WoastsClient.config.fpsConfig.greenFpsColor
         }

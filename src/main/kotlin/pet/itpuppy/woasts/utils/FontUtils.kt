@@ -7,7 +7,7 @@ import net.minecraft.network.chat.MutableComponent
 import net.minecraft.network.chat.Style
 
 object FontUtils {
-    val iconFont    = Style.EMPTY.withFont(FontDescription.Resource(Woasts.id("icons")))
+    val iconFont = Style.EMPTY.withFont(FontDescription.Resource(Woasts.id("icons")))
     val defaultFont = Style.EMPTY.withFont(FontDescription.DEFAULT)
 
     val questionMark = Component.literal("?")
