@@ -20,9 +20,14 @@
                         "downRight": "Lower-Right"
                     },
 
-                    "margin": {
-                        "@": "Margin",
-                        "@Tooltip": "Specifies the margin from the edges of the screen."
+                    "verticalMargin": {
+                        "@": "Vertical Margin",
+                        "@Tooltip": "Specifies the margin from the top/bottom edges of the screen."
+                    },
+
+                    "horizontalMargin": {
+                        "@": "Horizontal Margin",
+                        "@Tooltip": "Specifies the margin from the left/right edges of the screen."
                     },
 
                     "spacing": {

@@ -33,7 +33,10 @@ class Config : ConfigData {
     var renderCorner: RenderCorner = RenderCorner.UP_LEFT
 
     @ConfigEntry.Gui.Tooltip
-    var margin: Int = 5
+    var horizontalMargin: Int = 5
+
+    @ConfigEntry.Gui.Tooltip
+    var verticalMargin: Int = 5
 
     @ConfigEntry.Gui.Tooltip
     var spacing: Int = 3

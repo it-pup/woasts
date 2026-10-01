@@ -37,7 +37,7 @@ object WidgetRenderer {
         val isLeft = config.renderCorner == Config.RenderCorner.UP_LEFT || config.renderCorner == Config.RenderCorner.DOWN_LEFT
         val isUp = config.renderCorner == Config.RenderCorner.UP_LEFT || config.renderCorner == Config.RenderCorner.UP_RIGHT
 
-        var y = if (isUp) config.margin else McClient.window.guiScaledHeight - CONTAINER_HEIGHT - config.margin
+        var y = if (isUp) config.verticalMargin else McClient.window.guiScaledHeight - CONTAINER_HEIGHT - config.verticalMargin
         val yStep = (CONTAINER_HEIGHT + config.wrapSpacing) * if (isUp) 1 else -1
 
         val mouseX = McClient.mouse.x
@@ -46,7 +46,7 @@ object WidgetRenderer {
         var hoveredComponent: Component? = null
 
         for (line in lines) {
-            var x = if (isLeft) config.margin else McClient.window.guiScaledWidth - config.margin
+            var x = if (isLeft) config.horizontalMargin else McClient.window.guiScaledWidth - config.horizontalMargin
 
             for ((index, widget) in line.withIndex()) {
                 if (!isLeft) {
