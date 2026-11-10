@@ -33,7 +33,7 @@ object PingWidget : Widget<PingConfigSection>() {
         val currentTime = System.currentTimeMillis()
         if (currentTime - lastPingTime >= WoastsClient.config.pingConfig.updateTime * SECOND) {
             lastPingTime = currentTime
-            lastPingValue = PingListener.getPing()
+            lastPingValue = PingListener.getPing() ?: 0
         }
 
         return "${lastPingValue}ms"
