@@ -6,7 +6,7 @@ import pet.itpuppy.woasts.config.Config
 import me.shedaniel.autoconfig.AutoConfigClient
 
 class ModMenuIntegration : ModMenuApi {
-    override fun getModConfigScreenFactory(): ConfigScreenFactory<*>? {
+    override fun getModConfigScreenFactory(): ConfigScreenFactory<*> {
         return ConfigScreenFactory { parent ->
             AutoConfigClient.getConfigScreen(Config::class.java, parent).get()
         }

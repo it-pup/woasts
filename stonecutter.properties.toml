@@ -1,6 +1,6 @@
 mod.group   = "pet.itpuppy.woasts"
 mod.id      = "woasts"
-mod.version = "1.0.4"
+mod.version = "1.0.5"
 
 mod.name    = "Woasts!"
 mod.desc    = "Adds small HUD widgets with (sometimes not so) useful info in the corner of your screen!"
@@ -36,6 +36,6 @@ mod.mc_compat   = "~26.3"
 mod.mc_releases = ["26.3"]
 
 deps.fabric_api   = "0.160.5+26.3"
-deps.cloth_config = "26.3.158"
-deps.modmenu      = "21.0.0-beta.1"
+deps.cloth_config = "26.3.159"
+deps.modmenu      = "21.0.1"
 # =-=-=-=-=-=-=-=-=
